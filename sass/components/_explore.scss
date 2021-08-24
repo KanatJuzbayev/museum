@@ -1,0 +1,18 @@
+.explore {
+  background-color: $color-background;
+  padding: 75px 0;
+}
+
+.explore__img {
+  padding-top: 10px;
+}
+
+.explore__text {
+  @include font ($style: normal, $weight: 300, $size: 2.2rem, $height: 3.86rem);
+  color: $color-first;
+  margin-bottom: 25px;
+}
+
+.explore__line {
+  margin-bottom: 75px;
+}

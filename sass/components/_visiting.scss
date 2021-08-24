@@ -1,0 +1,42 @@
+.visiting {
+  padding-top: 75px;
+}
+
+.places {
+  margin-bottom: 75px;
+}
+
+.place {
+  margin-top: 75px;
+}
+
+.place__name {
+  @extend %font-add;
+  @include font ($style: normal, $weight: normal, $size: 3.2rem, $height: 3.5rem);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: $color-background;
+  margin-top: 25px;
+}
+
+.place__line {
+  content: "";
+  display: inline-block;
+  background-color: $color-detail;
+  border-radius: 0;
+  width: 70%;
+  height: 2px;
+	margin-top: 9px;
+}
+
+.virtual-tour {
+  @include font ($style: normal, $weight: 200, $size: 2.2rem, $height: 2.6rem);
+  color: $color-background;
+  margin-top: 10px;
+}
+
+.street-panorama {
+  @include font ($style: normal, $weight: 200, $size: 1.8rem, $height: 2.1rem);
+  color: $color-background;
+  margin-top: 10px;
+}

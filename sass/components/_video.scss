@@ -1,0 +1,14 @@
+.video {
+  padding: 90px 0 75px;
+}
+
+.video__description {
+  margin-top: 40px;
+}
+
+.video__text {
+  @include font ($style: normal, $weight: 300, $size: 2.2rem, $height: 3.8rem);
+  display: flex;
+  align-items: center;
+  color: $color-background;  
+}

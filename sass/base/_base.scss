@@ -1,0 +1,42 @@
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.6rem;
+	margin: auto;
+	@extend %font-pri;
+}
+
+h2 {
+	margin: 0;
+}
+
+h3 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+.section__title {
+	@extend %font-add;
+	@include font ($style: normal, $weight: normal, $size: 8.0rem, $height: 9.0rem);
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: $color-second;
+}
+
+.light__title {
+	color: $color-first;
+}
+
+.line__primary {
+	content: "";
+  display: inline-block;
+  background-color: $color-detail;
+  border-radius: 0;
+  width: 100%;
+  height: 3px;
+	margin-top: 25px;
+}

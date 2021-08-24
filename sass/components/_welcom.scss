@@ -1,0 +1,42 @@
+.welcom {
+  background-color: $color-background;
+  background-image: url(../assets/img/welcom-background.png);
+  background-size: 1215px 750px;
+  background-repeat: no-repeat;
+  background-position: calc(50% + 352px) 100%;
+}
+
+.welcom__content {
+  padding-bottom: 246px;
+}
+
+.welcom__title {
+	margin: 0;
+	@extend %font-add;
+	@include font ($style: normal, $weight: normal, $size: 8.0rem, $height: 9.0rem);
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	color: $color-first;
+	padding-top: 195px;
+}
+
+.welcom__text {
+  @include font ($style: normal, $weight: 300, $size: 2.8rem, $height: 3.3rem);
+  color: $color-first;
+  letter-spacing: 2px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 26px;
+}
+
+.button__discover {
+  @include font ($style: normal, $weight: 200, $size: 2.2rem, $height: 2.6rem);
+  text-align: center;
+  letter-spacing: 2px;
+  color: $color-first;
+  margin-top: 76px;
+  width: 360px;
+  height: 75px;
+  background-color: $color-detail;
+  border-radius: 10px;
+  border-color: $color-detail;
+}
