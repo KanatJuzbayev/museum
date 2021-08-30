@@ -770,6 +770,50 @@ ul {
   color: #030303;
 }
 
+.video__player {
+  margin: 0;
+}
+
+.player__control {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 85px;
+}
+
+.player__button {
+  background-color: black;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.toggle-button {
+  margin-left: 30px;
+  margin-right: 50px;
+}
+
+.mute-button {
+  margin-right: 50px;
+}
+
+.panel {
+  content: "";
+  display: inline-block;
+  background-color: #C4C4C4;
+  margin-right: 50px;
+  border-radius: 5px;
+  height: 8px;
+}
+
+.progress {
+  width: 930px;
+}
+
+.volume {
+  width: 155px;
+}
+
 .contacts {
   padding: 75px 0;
 }

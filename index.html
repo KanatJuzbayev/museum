@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Museum</title>
   <link rel="stylesheet" href="sass/style.css">
-  <link rel="icon" href="assets/favicon.ico">
+  <link rel="icon" href="assets/logo.png">
   <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -125,9 +125,38 @@
 
     <section class="video">
       <div class="wrapper wrapper__video">
-        <video src="https://youtu.be/zp1BXPX8jcU" autoplay poster="./assets/img/video.png">
+        <div class="player">
+          <video class="video__player" src="https://youtu.be/zp1BXPX8jcU" autoplay poster="./assets/img/video.png">
+            <object type="image/svg+xml" data="./assets/svg/player-control/play-main.svg">
+              Your browser does not support SVG
+            </object>
+          </video>
 
-        </video>
+          <div class="player__control">
+            <button class="player__button toggle-button" title="Toggle Play">
+              <object type="image/svg+xml" data="./assets/svg/player-control/play.svg">
+                Your browser does not support SVG
+              </object>
+            </button>
+            <div class="panel progress">
+              <div class="progress__fill"></div>
+            </div>
+            <button class="player__button mute-button" title="Отключение звука (m)">
+              <object type="image/svg+xml" data="./assets/svg/player-control/mute.svg">
+                Your browser does not support SVG
+              </object>
+            </button>
+            <div class="panel volume">
+              <div class="volume__fill"></div>
+            </div>
+            <button class="player__button fullscreen-button" title="Во весь экран (f)">
+              <object type="image/svg+xml" data="./assets/svg/player-control/fullscreen.svg">
+                Your browser does not support SVG
+              </object>
+            </button>
+          </div>
+
+        </div>
         <div class="layout-2-column video__description">
           <h2 class="section__title">Video journey</h2>
           <p class="video__text">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
