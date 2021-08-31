@@ -126,12 +126,15 @@
     <section class="video">
       <div class="wrapper wrapper__video">
         <div class="player">
-          <video class="video__player" src="https://youtu.be/zp1BXPX8jcU" autoplay poster="./assets/img/video.png">
+          <div class="video__screen">
+            <video class="video__player" src="https://youtu.be/zp1BXPX8jcU" poster="./assets/img/video.png"></video>
+          </div>
+          
+          <button class="player__button-big">
             <object type="image/svg+xml" data="./assets/svg/player-control/play-main.svg" class="player-object">
               Your browser does not support SVG
             </object>
-          </video>
-
+          </button>
           <div class="player__control">
             <button class="player__button toggle-button" title="Toggle Play">
               <object type="image/svg+xml" data="./assets/svg/player-control/play.svg" class="player-object">
@@ -251,5 +254,8 @@
     </div>
   </footer>
 
+  <script type="text/javascript" src="./script.js">
+
+  </script>
 </body>
 </html>

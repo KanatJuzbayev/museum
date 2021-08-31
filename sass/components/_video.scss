@@ -17,6 +17,17 @@
   margin: 0;
 }
 
+.video__screen {
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
 .player__control {
     display: flex;
     align-items: center;
@@ -28,6 +39,14 @@
   background-color: black;
   padding: 0;
   border: 0;
+}
+
+.player__button-big {
+  position: absolute;
+  margin-left: 610px;
+  margin-top: -415px;
+  border: 0;
+  background-color: transparent;
 }
 
 .toggle-button {
