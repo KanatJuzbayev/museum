@@ -28,7 +28,6 @@
   background-color: black;
   padding: 0;
   border: 0;
-  cursor: pointer;
 }
 
 .toggle-button {
@@ -55,4 +54,8 @@
 
 .volume {
   width: 155px;
+}
+
+.player-svg {
+  cursor: pointer;
 }
