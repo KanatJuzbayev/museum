@@ -129,7 +129,7 @@
           <div class="video__screen">
             <video class="video__player" src="https://youtu.be/zp1BXPX8jcU" poster="./assets/img/video.png"></video>
           </div>
-          
+
           <button class="player__button-big">
             <object type="image/svg+xml" data="./assets/svg/player-control/play-main.svg" class="player-object">
               Your browser does not support SVG
@@ -141,17 +141,19 @@
                 Your browser does not support SVG
               </object>
             </button>
-            <div class="panel progress">
+            <input class="panel progress" type="range" value="0">
+            <!-- <div class="panel progress">
               <div class="progress__fill"></div>
-            </div>
+            </div> -->
             <button class="player__button mute-button" title="Отключение звука (m)">
               <object type="image/svg+xml" data="./assets/svg/player-control/mute.svg" class="player-object">
                 Your browser does not support SVG
               </object>
             </button>
-            <div class="panel volume">
+            <input class="panel volume" type="range" value="0">
+            <!-- <div class="panel volume">
               <div class="volume__fill"></div>
-            </div>
+            </div> -->
             <button class="player__button fullscreen-button" title="Во весь экран (f)" class="player-object">
               <object type="image/svg+xml" data="./assets/svg/player-control/fullscreen.svg">
                 Your browser does not support SVG
