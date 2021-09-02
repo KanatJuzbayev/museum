@@ -128,10 +128,17 @@
         <div class="player">
 
           <video class="viewer" src="assets\video\video0.mp4" poster="./assets/img/video.png"></video>
-          <object type="image/svg+xml" data="./assets/svg/player-control/play-main.svg" class="play">Your browser does not support SVG</object>
+          <object class="play" onclick="togglePlay()" type="image/svg+xml" data="./assets/svg/player-control/play-main.svg" >Your browser does not support SVG</object>
+
           <div class="player__control">
-            <object class="toggle" type="image/svg+xml" data="./assets/svg/player-control/play.svg" title="Смотреть (k)">Your browser does not support SVG</object>
+            <button class="video-button" type="button">
+              <svg class="player-svg" width="23" height="31" viewBox="0 0 23 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.35 15.2417L0 0C0 22.971 0 11.6973 0 30.473L22.35 15.2417Z" fill="#B3B3B3"/>
+              </svg>
+            </button>
+
             <input class="progress" type="range" value="0">
+
             <object class="mute" type="image/svg+xml" data="./assets/svg/player-control/mute.svg" title="Отключение звука (m)">Your browser does not support SVG </object>
             <input class="volume" type="range" value="0">
             <object class="fullscreen" type="image/svg+xml" data="./assets/svg/player-control/fullscreen.svg" title="Во весь экран (f)">Your browser does not support SVG</object>
