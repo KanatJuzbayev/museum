@@ -752,7 +752,7 @@ ul {
   margin-top: 75px;
 }
 
-.video {
+.video__section {
   padding: 90px 0 75px;
 }
 
@@ -770,18 +770,9 @@ ul {
   color: #030303;
 }
 
-.video__player {
-  margin: 0;
-}
-
-.video__screen {
-  height: 100%;
+.viewer {
+  display: block;
   width: 100%;
-  background-color: #000000;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
 }
 
 .player__control {
@@ -791,44 +782,30 @@ ul {
   height: 85px;
 }
 
-.player__button {
-  background-color: black;
-  padding: 0;
-  border: 0;
-}
-
-.player__button-big {
+.play {
   position: absolute;
-  margin-left: 610px;
-  margin-top: -415px;
-  border: 0;
-  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
 }
 
-.toggle-button {
+.toggle {
   margin-left: 30px;
   margin-right: 50px;
 }
 
-.mute-button {
+.mute {
   margin-right: 50px;
-}
-
-.panel {
-  content: "";
-  display: inline-block;
-  background-color: #C4C4C4;
-  margin-right: 50px;
-  border-radius: 5px;
-  height: 8px;
 }
 
 .progress {
   width: 930px;
+  margin-right: 50px;
 }
 
 .volume {
   width: 155px;
+  margin-right: 50px;
 }
 
 .player-svg {
