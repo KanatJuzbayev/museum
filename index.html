@@ -7,8 +7,9 @@
   <title>Museum</title>
   <link rel="stylesheet" href="sass/style.css">
   <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -20,11 +21,12 @@
       </a>
       <nav class="header__navigation">
         <ul class="navigation">
-          <li class="navigation__link">Visiting</li>
-          <li class="navigation__link">Explore</li>
-          <li class="navigation__link">Video</li>
-          <li class="navigation__link">Tickets</li>
-          <li class="navigation__link">Contacts</li>
+          <li><a href="#visiting" class="navigation__link">Visiting</a></li>
+          <li><a href="#explore" class="navigation__link">Explore</a></li>
+          <li><a href="#video" class="navigation__link">Video</a></li>
+          <li><a href="#gallery" class="navigation__link">Gallery</a></li>
+          <li><a href="#tickets" class="navigation__link">Tickets</a></li>
+          <li><a href="#contacts" class="navigation__link">Contacts</a></li>
         </ul>
       </nav>
     </div>
@@ -36,84 +38,96 @@
         <div class="welcom__content">
           <h1 class="welcom__title">Welcom<br> to the louvre</h1>
           <p class="welcom__text">From the castle to the museum</p>
-          <a class="welcom__buttons" href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736">
+          <a class="welcom__buttons" target=”_blank” href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736">
             <button class="button button__discover">Discover the Louvre</button>
           </a>
         </div>
       </div>
     </section>
 
-    <section class="visiting">
+    <section class="visiting" id="visiting">
       <div class="wrapper visiting__wrapper">
         <h2 class="section__title">Virtual tour</h2>
         <span class="line__primary"></span>
         <div class="layout-3-column places">
           <div class="place">
-            <img class="place__image" src="./assets/img/royal-palace.png" alt="Royal Palace">
-            <div class="place__content">
-              <h3 class="place__name">Royal Palace</h3>
-              <span class="place__line"></span>
-              <p class="virtual-tour">360° Virtual Tour</p>
-              <p class="street-panorama">Google Street Panorama View</p>
-            </div>
+            <a class="place_link" target=”_blank” href="https://www.google.com/maps/@48.8606882,2.3356791,3a,90y,328.36h,87.55t/data=!3m7!1e1!3m5!1sAF1QipMZ9YgnArbwEIbTDANeSQYFu9gNqpW_2Sv8FBvY!2e10!3e12!7i4352!8i1815">
+              <img class="place__image" src="./assets/img/royal-palace.png" alt="Royal Palace">
+              <div class="place__content">
+                <h3 class="place__name">Royal Palace</h3>
+                <span class="place__line"></span>
+                <p class="virtual-tour">360° Virtual Tour</p>
+                <p class="street-panorama">Google Street Panorama View</p>
+              </div>
+            </a>
           </div>
           <div class="place">
-            <img class="place__image" src="./assets/img/denon-wing.png" alt="Denon Wing">
-            <div class="place__content">
-              <h3 class="place__name">Denon Wing</h3>
-              <span class="place__line"></span>
-              <p class="virtual-tour">360° Virtual Tour</p>
-              <p class="street-panorama">Google Street Panorama View</p>
-            </div>
+            <a class="place_link" target=”_blank” href="https://www.google.com/maps/@48.8563254,2.3352706,3a,75y,90t/data=!3m7!1e1!3m5!1sAF1QipNRj_CwP4coDMYdCHj6qHeBeJpI2VxU5BUsOX4F!2e10!3e12!7i11000!8i5500">
+              <img class="place__image" src="./assets/img/denon-wing.png" alt="Denon Wing">
+              <div class="place__content">
+                <h3 class="place__name">Denon Wing</h3>
+                <span class="place__line"></span>
+                <p class="virtual-tour">360° Virtual Tour</p>
+                <p class="street-panorama">Google Street Panorama View</p>
+              </div>
+            </a>
           </div>
           <div class="place">
-            <img class="place__image" src="./assets/img/colonnade-perrault.png" alt="Colonnade Perrault">
-            <div class="place__content">
-              <h3 class="place__name">Colonnade Perraulte</h3>
-              <span class="place__line"></span>
-              <p class="virtual-tour">360° Virtual Tour</p>
-              <p class="street-panorama">Google Street Panorama View</p>
-            </div>
+            <a class="place_link" target="_blank" href="https://www.google.com/maps/@48.8601723,2.3395439,3a,88.4y,322.04h,84.25t/data=!3m7!1e1!3m5!1sAF1QipNMZGQuEA-pAUvIG_eP_2f3gWTKZEJ6XLVJ-Pgb!2e10!3e12!7i10240!8i5120">
+              <img class="place__image" src="./assets/img/colonnade-perrault.png" alt="Colonnade Perrault">
+              <div class="place__content">
+                <h3 class="place__name">Colonnade Perraulte</h3>
+                <span class="place__line"></span>
+                <p class="virtual-tour">360° Virtual Tour</p>
+                <p class="street-panorama">Google Street Panorama View</p>
+              </div>
+            </a>
           </div>
           <div class="place">
-            <img class="place__image" src="./assets/img/greek-hall.png" alt="Greek hall">
-            <div class="place__content">
-              <h3 class="place__name">Greek hall</h3>
-              <span class="place__line"></span>
-              <p class="virtual-tour">360° Virtual Tour</p>
-              <p class="street-panorama">Google Street Panorama View</p>
-            </div>
+            <a class="place_link" target="_blank" href="https://www.google.com/maps/@48.860183,2.3356156,3a,90y,177.69h,95.61t/data=!3m7!1e1!3m5!1sAF1QipP7uFZnTITRe-7AEVAgHAfqiCL-03gvBHcYWgF3!2e10!3e12!7i5472!8i2736">
+              <img class="place__image" src="./assets/img/greek-hall.png" alt="Greek hall">
+              <div class="place__content">
+                <h3 class="place__name">Greek hall</h3>
+                <span class="place__line"></span>
+                <p class="virtual-tour">360° Virtual Tour</p>
+                <p class="street-panorama">Google Street Panorama View</p>
+              </div>
+            </a>
           </div>
           <div class="place">
-            <img class="place__image" src="./assets/img/mona-lisa.png" alt="Mona Lisa">
-            <div class="place__content">
-              <h3 class="place__name">Mona Lisa</h3>
-              <span class="place__line"></span>
-              <p class="virtual-tour">360° Virtual Tour</p>
-              <p class="street-panorama">Google Street Panorama View</p>
-            </div>
+            <a class="place_link" target="_blank" href="https://www.google.com/maps/@48.8598788,2.3355157,3a,82.2y,7.53h,94t/data=!3m7!1e1!3m5!1sAF1QipO1wkUUbyzpPjj-OR0mR5etZJT-xl-40XK8rDQ3!2e10!3e12!7i10240!8i5120">
+              <img class="place__image" src="./assets/img/mona-lisa.png" alt="Mona Lisa">
+              <div class="place__content">
+                <h3 class="place__name">Mona Lisa</h3>
+                <span class="place__line"></span>
+                <p class="virtual-tour">360° Virtual Tour</p>
+                <p class="street-panorama">Google Street Panorama View</p>
+              </div>
+            </a>
           </div>
           <div class="place">
-            <img class="place__image" src="./assets/img/night-palace.png" alt="Night Palace">
-            <div class="place__content">
-              <h3 class="place__name">Night Palace</h3>
-              <span class="place__line"></span>
-              <p class="virtual-tour">360° Virtual Tour</p>
-              <p class="street-panorama">Google Street Panorama View</p>
-            </div>
+            <a class="place_link" target="_blank" href="https://www.google.com/maps/@48.8563254,2.3352706,3a,90y,21.26h,79.91t/data=!3m7!1e1!3m5!1sAF1QipPpGAowYatVyk3MMGnZAaQkYm2EUk-Dlca06SS5!2e10!3e12!7i11304!8i5652">
+              <img class="place__image" src="./assets/img/night-palace.png" alt="Night Palace">
+              <div class="place__content">
+                <h3 class="place__name">Night Palace</h3>
+                <span class="place__line"></span>
+                <p class="virtual-tour">360° Virtual Tour</p>
+                <p class="street-panorama">Google Street Panorama View</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="explore">
+    <section class="explore" id="explore">
       <div class="wrapper wrapper__explore">
         <div class="layout-2-column">
           <div class="explore__description">
             <h2 class="section__title light__title">Picture explore</h2>
             <span class="line__primary explore__line"></span>
             <p class="explore__text">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
-            <p class="explore__text">It was cleaned in 1984 to remove a "yellow veil" of dust that had gathered since the previous restoration in the 19th century.</p>
+            <p class="explore__text">It was cleaned in 1984 to remove a <span class="text__colored">"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</p>
             <p class="explore__text">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
           </div>
           <div class="explore__img">
@@ -123,12 +137,16 @@
       </div>
     </section>
 
-    <section class="video__section">
+    <section class="video__section" id="video">
       <div class="wrapper wrapper__video">
+        <div class="layout-2-column video__description">
+          <h2 class="section__title">Video journey</h2>
+          <p class="video__text">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
+        </div>
         <div class="player">
 
           <video class="viewer" src="assets\video\video0.mp4" poster="./assets/img/video.png"></video>
-          <object class="play" onclick="togglePlay()" type="image/svg+xml" data="./assets/svg/player-control/play-main.svg" >Your browser does not support SVG</object>
+          <!-- <object class="play" onclick="togglePlay()" type="image/svg+xml" data="./assets/svg/player-control/play-main.svg" >Your browser does not support SVG</object> -->
 
           <div class="player__control">
             <button class="video-button" type="button">
@@ -137,22 +155,26 @@
               </svg>
             </button>
 
-            <input class="progress" type="range" value="0">
+            <div class="wrapper__progress">
+              <input class="progress__slider" type="range" value="0" min="0" max="100" step="0">
+              <div class="progress"></div>
+            </div>
 
             <object class="mute" type="image/svg+xml" data="./assets/svg/player-control/mute.svg" title="Отключение звука (m)">Your browser does not support SVG </object>
-            <input class="volume" type="range" value="0">
+
+            <div class="wrapper__volume">
+              <input class="volume__slider" type="range" value="0" min="0" max="100" step="0">
+              <div class="volume"></div>
+            </div>
+
             <object class="fullscreen" type="image/svg+xml" data="./assets/svg/player-control/fullscreen.svg" title="Во весь экран (f)">Your browser does not support SVG</object>
           </div>
 
         </div>
-        <div class="layout-2-column video__description">
-          <h2 class="section__title">Video journey</h2>
-          <p class="video__text">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
-        </div>
       </div>
     </section>
 
-    <section class="tickets">
+    <section class="tickets" id="tickets">
       <div class="wrapper wrapper__tickets">
         <h2 class="section__title light__title">Buy tickets</h2>
         <span class="line__primary"></span>
@@ -165,7 +187,7 @@
       </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="wrapper contacts__wrapper">
         <h2 class="section__title">Contacts</h2>
         <span class="line__primary"></span>

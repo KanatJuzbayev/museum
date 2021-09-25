@@ -1,9 +1,13 @@
 .welcom {
   background-color: $color-background;
-  background-image: url(../assets/img/welcom-background.png);
-  background-size: 1215px 750px;
+  background-image: url(../assets/img/welcom/welcom-background1.png);
+  background-size: 1000px 750px;
   background-repeat: no-repeat;
-  background-position: calc(50% + 352px) 100%;
+  background-position: calc(50% + 220px) calc(100% - 60px);
+}
+
+.welcom__wrapper {
+  // padding-bottom: 246px;
 }
 
 .welcom__content {
@@ -37,6 +41,10 @@
   width: 360px;
   height: 75px;
   background-color: $color-detail;
+  @extend %transition;
+  &:hover {
+    background-color: $color-second;
+  }
   border-radius: 10px;
-  border-color: $color-detail;
+  border: none;
 }

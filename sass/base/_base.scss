@@ -1,5 +1,6 @@
 html {
 	font-size: 10px;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -39,4 +40,8 @@ p {
   width: 100%;
   height: 3px;
 	margin-top: 25px;
+}
+
+.text__colored {
+	color: $color-second;
 }

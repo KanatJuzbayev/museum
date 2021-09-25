@@ -8,7 +8,7 @@
 }
 
 .explore__text {
-  @include font ($style: normal, $weight: 300, $size: 2.2rem, $height: 3.86rem);
+  @include font ($style: normal, $weight: 300, $size: 2.2rem, $height: 3.8rem);
   color: $color-first;
   margin-bottom: 25px;
 }

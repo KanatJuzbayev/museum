@@ -12,14 +12,13 @@
 }
 
 .footer__links {
-  display: contents;
-  align-items: center;
-  justify-content: space-between;
+  width: 363px;
+  height: 128px;
+  align-items: flex-start;
 }
 
 .footer__navigation{
   display: block;
-  margin-right: 153px;
 }
 
 .footer__navigation_title {
@@ -47,8 +46,13 @@
 
 .social__media {
   display: flex;
-  width: 500px;
+  width: 340px;
   height: 48px;
   align-items: center;
   justify-content: space-between;
+}
+
+.social__media__link {
+  height: 48px;
+  width: 48px;
 }

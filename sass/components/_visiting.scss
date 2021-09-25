@@ -10,6 +10,14 @@
   margin-top: 75px;
 }
 
+.place:hover .place__line {
+  width: 100%;
+}
+
+.place_link {
+  text-decoration: none;
+}
+
 .place__name {
   @extend %font-add;
   @include font ($style: normal, $weight: normal, $size: 3.2rem, $height: 3.5rem);
@@ -25,6 +33,10 @@
   background-color: $color-detail;
   border-radius: 0;
   width: 70%;
+  @extend %transition;
+  // &:hover {
+  //   width: 100%;
+  // }
   height: 2px;
 	margin-top: 9px;
 }

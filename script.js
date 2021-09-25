@@ -15,3 +15,20 @@ videoButton.addEventListener('click', togglePlay);
 video.addEventListener('click', togglePlay);
 // player__control.addEventListener('click', togglePlay);
 console.log(video);
+
+//progress__slider
+const progress__slider = document.querySelector('.progress__slider');
+const progress = document.querySelector('.progress');
+
+progress__slider.oninput = function(){
+  progress.style.width = `${this.value}%` ;
+};
+
+
+//volume__slider
+const volume__slider = document.querySelector('.volume__slider');
+const volume = document.querySelector('.volume');
+
+volume__slider.oninput = function(){
+  volume.style.width = `${this.value}%` ;
+};

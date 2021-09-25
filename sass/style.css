@@ -1,4 +1,4 @@
-.footer__navigation_links a, .ico-path, .logo-path {
+.place__line, .button__discover, .navigation__link, .footer__navigation_links a, .ico-path, .logo-path {
   transition: All 0.3s ease-out;
 }
 
@@ -12,6 +12,7 @@ body {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -53,6 +54,10 @@ p {
   width: 100%;
   height: 3px;
   margin-top: 25px;
+}
+
+.text__colored {
+  color: #9D8665;
 }
 
 /* ==========================================================================
@@ -558,14 +563,13 @@ ul {
 }
 
 .footer__links {
-  display: contents;
-  align-items: center;
-  justify-content: space-between;
+  width: 363px;
+  height: 128px;
+  align-items: flex-start;
 }
 
 .footer__navigation {
   display: block;
-  margin-right: 153px;
 }
 
 .footer__navigation_title {
@@ -594,37 +598,49 @@ ul {
 
 .social__media {
   display: flex;
-  width: 500px;
+  width: 340px;
   height: 48px;
   align-items: center;
   justify-content: space-between;
 }
 
+.social__media__link {
+  height: 48px;
+  width: 48px;
+}
+
 .navigation {
   display: flex;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 200;
   font-size: 2.2rem;
-  line-height: 5rem;
+  line-height: 2.6rem;
   letter-spacing: 2px;
-  border: 1px solid #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .navigation__link {
   list-style: none;
-  margin-right: 76px;
+  margin-right: 55px;
   padding: 0;
   cursor: pointer;
   color: #FFFFFF;
+  text-decoration: none;
+}
+.navigation__link:hover {
+  color: #9D8665;
+}
+
+.last_link {
+  margin: 0;
 }
 
 .welcom {
   background-color: #030303;
-  background-image: url(../assets/img/welcom-background.png);
-  background-size: 1215px 750px;
+  background-image: url(../assets/img/welcom/welcom-background1.png);
+  background-size: 1000px 750px;
   background-repeat: no-repeat;
-  background-position: calc(50% + 352px) 100%;
+  background-position: calc(50% + 220px) calc(100% - 60px);
 }
 
 .welcom__content {
@@ -667,7 +683,10 @@ ul {
   height: 75px;
   background-color: #710707;
   border-radius: 10px;
-  border-color: #710707;
+  border: none;
+}
+.button__discover:hover {
+  background-color: #9D8665;
 }
 
 .visiting {
@@ -680,6 +699,14 @@ ul {
 
 .place {
   margin-top: 75px;
+}
+
+.place:hover .place__line {
+  width: 100%;
+}
+
+.place_link {
+  text-decoration: none;
 }
 
 .place__name {
@@ -734,7 +761,7 @@ ul {
   font-style: normal;
   font-weight: 300;
   font-size: 2.2rem;
-  line-height: 3.86rem;
+  line-height: 3.8rem;
   color: #FFFFFF;
   margin-bottom: 25px;
 }
@@ -757,7 +784,7 @@ ul {
 }
 
 .video__description {
-  margin-top: 40px;
+  margin-bottom: 75px;
 }
 
 .video__text {
@@ -783,6 +810,7 @@ ul {
 }
 
 .player__control {
+  position: relative;
   display: flex;
   align-items: center;
   background-color: black;
@@ -810,18 +838,86 @@ ul {
   margin-right: 50px;
 }
 
-.progress {
+.player-svg {
+  cursor: pointer;
+}
+
+.wrapper__progress {
   width: 930px;
+  position: relative;
+  z-index: 1;
   margin-right: 50px;
+}
+
+.progress__slider {
+  width: 100%;
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  height: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #C4C4C4;
+  z-index: 2;
+}
+
+.progress__slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background: #FFFFFF;
+  z-index: 6;
+}
+
+.progress {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 8px;
+  background-color: #710707;
+  top: calc(50% - 2.5px);
+  z-index: 3;
+}
+
+.wrapper__volume {
+  width: 155px;
+  margin-right: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.volume__slider {
+  width: 100%;
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  height: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #C4C4C4;
+  z-index: 2;
+}
+
+.volume__slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background: #FFFFFF;
+  z-index: 6;
 }
 
 .volume {
-  width: 155px;
-  margin-right: 50px;
-}
-
-.player-svg {
-  cursor: pointer;
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 8px;
+  background-color: #710707;
+  top: calc(50% - 2.5px);
+  z-index: 3;
 }
 
 .contacts {
