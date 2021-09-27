@@ -1,8 +1,8 @@
-.place__line, .button__discover, .navigation__link, .footer__navigation_links a, .ico-path, .logo-path {
+.buy__button, .place__line, .button__discover, .navigation__link, .footer__navigation_links a, .ico-path, .logo-path {
   transition: All 0.3s ease-out;
 }
 
-body {
+.buy, body {
   font-family: "Roboto", Verdana, sans-serif;
 }
 
@@ -770,13 +770,142 @@ ul {
   margin-bottom: 75px;
 }
 
-.tickets {
+.gallery {
   background-color: #030303;
+}
+
+.tickets {
+  background-color: #FFFFFF;
   padding: 75px 0;
+  background-image: url(../assets/img/tickets/parallax1.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 1293px;
 }
 
 .tickets__content {
   margin-top: 75px;
+}
+
+.buy {
+  display: flex;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+}
+
+.bay__title {
+  display: inline-block;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+}
+
+.ticket__type {
+  margin-left: 20px;
+}
+
+.amount {
+  text-align: right;
+}
+
+.radio-buttons {
+  margin-top: 50px;
+}
+
+.radio-button__container {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 25px;
+  cursor: pointer;
+  padding-left: 40px;
+  align-items: baseline;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkmark {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+}
+
+/* Hide the browser's default radio button */
+.radio-button__container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-button__container:hover input ~ .checkmark {
+  background-color: #9D8665;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-button__container input:checked ~ .checkmark {
+  background-color: #FFFFFF;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-button__container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-button__container .checkmark:after {
+  top: 3px;
+  left: 3px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #030303;
+}
+
+.buy__button {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  margin-top: 76px;
+  width: 175px;
+  height: 50px;
+  background-color: #030303;
+  border-radius: 2px;
+  border: none;
+}
+.buy__button:hover {
+  background-color: #9D8665;
+  color: #030303;
+}
+
+.amount__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
 }
 
 .video__section {

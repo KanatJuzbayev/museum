@@ -174,14 +174,57 @@
       </div>
     </section>
 
+    <section class="gallery" id="gallery">
+      <div class="wrapper wrapper__gallery">
+        <h2 class="section__title light__title">Art Gallery</h2>
+      </div>
+    </section>
+
     <section class="tickets" id="tickets">
       <div class="wrapper wrapper__tickets">
-        <h2 class="section__title light__title">Buy tickets</h2>
+        <h2 class="section__title">Buy tickets</h2>
         <span class="line__primary"></span>
         <div class="layout-2-column tickets__content">
           <img class="tickets__img" src="./assets/img/tickets.png" alt="tickets">
-          <div class="buy">
+          <div class="layout-2-column buy">
+            <div class="ticket__type">
+              <p class="bay__title">Ticket Type</p>
 
+              <div class="radio-buttons">
+                <label class="radio-button__container">Permanent exhibition
+                  <input type="radio" checked="checked" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="radio-button__container">
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>Temporary exhibition
+                </label>
+                <label class="radio-button__container">
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>Combined Admission
+                </label>
+              </div>
+
+            </div>
+            <div class="amount">
+              <p class="bay__title">Amount</p>
+              <p class="amount__text">Basic 18+</p>
+              <div class="amount__selections">
+                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                <input type="number" min="0" max="20" value="1" readonly class="number">
+                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+              </div>
+              <p class="amount__text">Senior 65+</p>
+              <div class="amount__selections">
+                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                <input type="number" min="0" max="20" value="1" readonly class="number">
+                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+              </div>
+              <div class="total">
+                <p class="total__price">Total € 220</p>
+              </div>
+              <button class="button buy__button">Buy Now</button>
+            </div>
           </div>
         </div>
       </div>
