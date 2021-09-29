@@ -1,3 +1,42 @@
 .gallery {
   background-color: $color-background;
+  padding-top: 75px;
+}
+
+.gallery-container {
+  position: relative;
+  margin-top: 75px;
+  overflow: hidden;
+  height: 1960px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 360px;
+    width: 1440px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      #000000 100%
+    );
+  }
+}
+
+.gallery-container-inner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+  width: 1440px;
+  height: 2500px;
+  row-gap: 36px;
+  column-gap: 24px;
+  .gallery-img {
+    width: calc(33.3% - 16px);
+    z-index: 0;
+  }
+  .gallery-img:nth-child(1),
+  .gallery-img:nth-child(9) {
+    margin-top: 50px;
+  }
 }
