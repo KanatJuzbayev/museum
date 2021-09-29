@@ -776,11 +776,9 @@ ul {
 
 .tickets {
   background-color: #FFFFFF;
-  padding: 75px 0;
-  background-image: url(../assets/img/tickets/parallax1.png);
   background-repeat: no-repeat;
   background-position: bottom;
-  height: 1293px;
+  margin: 75px 0;
 }
 
 .tickets__content {
@@ -802,6 +800,7 @@ ul {
   font-weight: bold;
   font-size: 2.8rem;
   line-height: 3.3rem;
+  margin-bottom: 25px;
 }
 
 .ticket__type {
@@ -906,6 +905,84 @@ ul {
   font-weight: 300;
   font-size: 2.2rem;
   line-height: 2.6rem;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.amount__selections {
+  display: flex;
+  width: 150px;
+  height: 50px;
+  border: 3px solid #000000;
+  box-sizing: border-box;
+  border-radius: 0px;
+  margin-left: auto;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.total__price {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+  letter-spacing: 1.65px;
+}
+
+.amount__button {
+  border: none;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.2rem;
+  line-height: 3.7rem;
+  text-align: center;
+  background: #FFFFFF;
+  width: 40px;
+  height: 44px;
+  display: block;
+  color: black;
+  background: #fdfdfd;
+  text-align: center;
+  border: none;
+}
+
+.number {
+  display: block;
+  border: none;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  text-align: center;
+  display: block;
+  background: none;
+  border: none;
+  width: 30px;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+.number::-webkit-inner-spin-button, .number::-webkit-outer-spin-button {
+  appearance: none;
+}
+
+.total {
+  margin-top: 50px;
+}
+
+.selections__container {
+  max-width: 150px;
+  margin-left: auto;
+}
+
+.parallax {
+  width: 100%;
+  height: 400px;
+  background: url(../assets/img/tickets/parallax.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .video__section {

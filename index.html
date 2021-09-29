@@ -208,17 +208,19 @@
             </div>
             <div class="amount">
               <p class="bay__title">Amount</p>
-              <p class="amount__text">Basic 18+</p>
-              <div class="amount__selections">
-                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                <input type="number" min="0" max="20" value="1" readonly class="number">
-                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
-              </div>
-              <p class="amount__text">Senior 65+</p>
-              <div class="amount__selections">
-                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                <input type="number" min="0" max="20" value="1" readonly class="number">
-                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+              <div class="selections__container">
+                <p class="amount__text">Basic 18+</p>
+                <div class="amount__selections basic">
+                  <button class="amount__button" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                  <input type="number" min="0" max="20" value="1" readonly class="number">
+                  <button class="amount__button" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                </div>
+                <p class="amount__text">Senior 65+</p>
+                <div class="amount__selections senior">
+                  <button class="amount__button" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                  <input type="number" min="0" max="20" value="1" readonly class="number">
+                  <button class="amount__button" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                </div>
               </div>
               <div class="total">
                 <p class="total__price">Total € 220</p>
@@ -229,6 +231,7 @@
         </div>
       </div>
     </section>
+    <div class="parallax"></div>
 
     <section class="contacts" id="contacts">
       <div class="wrapper contacts__wrapper">
