@@ -53,6 +53,40 @@
 }
 
 .social__media__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 48px;
   width: 48px;
+
+  border: 1px solid #666666;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 0px 0px #666666);
+  border-radius: 50%;
+  &:hover {
+    filter: invert(52%) sepia(30%) saturate(368%) hue-rotate(356deg) brightness(97%) contrast(92%);
+  }
+
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.youtube {
+  background-image: url(../assets/svg/icons/youtube1.svg);
+}
+
+.instagram {
+  background-image: url(../assets/svg/icons/instagram.svg);
+}
+
+.facebook {
+  background-image: url(../assets/svg/icons/facebook.svg);
+}
+
+.twitter {
+  background-image: url(../assets/svg/icons/twitter.svg);
+}
+
+.pinterest {
+  background-image: url(../assets/svg/icons/pinterest.svg);
 }

@@ -1,17 +1,4 @@
 .ico-object {
-  width: 48px;
-  height: 48px;
-}
-
-.ico-path {
-  @extend %transition;
-}
-
-.ico-svg {
-  cursor: pointer;
-  &:hover {
-        .ico-path {
-            fill: $color-second;
-        }
-    }
+  width: 24px;
+  height: 24px;
 }
