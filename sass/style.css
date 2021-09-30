@@ -2,11 +2,11 @@
   transition: All 0.3s ease-out;
 }
 
-.buy, body {
+.buy, .creates, .footer__navigation_links a, body {
   font-family: "Roboto", Verdana, sans-serif;
 }
 
-.place__name, .welcom__title, .footer__navigation_links, .section__title {
+.place__name, .welcom__title, .section__title {
   font-family: "Forum", Verdana, sans-serif;
 }
 
@@ -46,7 +46,7 @@ p {
   color: #FFFFFF;
 }
 
-.line__primary {
+.line {
   content: "";
   display: inline-block;
   background-color: #710707;
@@ -54,6 +54,10 @@ p {
   width: 100%;
   height: 3px;
   margin-top: 25px;
+}
+
+.additional {
+  background-color: #666666;
 }
 
 .text__colored {
@@ -544,25 +548,24 @@ ul {
 }
 
 .footer {
-  padding: 75px 0;
+  padding: 75px 0 0 0;
   background-color: #030303;
 }
 
 .footer__wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 75px;
+  margin-bottom: 50px;
 }
 
 .footer__links {
-  width: 363px;
+  text-align: inherit;
+  width: 500px;
   height: 128px;
   align-items: flex-start;
 }
 
-.footer__navigation {
-  display: block;
+.navigation__column {
+  display: inline-block;
 }
 
 .footer__navigation_title {
@@ -572,12 +575,16 @@ ul {
 .footer__navigation_links {
   padding: 0 0;
   list-style: none;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.6rem;
-  line-height: 3.5rem;
+}
+.footer__navigation_links li {
+  margin-bottom: 25px;
 }
 .footer__navigation_links a {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  letter-spacing: 2px;
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -586,10 +593,14 @@ ul {
 }
 
 .footer__logo {
-  margin-right: 152px;
+  margin: 0 145px 0 0;
+  width: 195px;
+  height: 50px;
 }
 
 .social__media {
+  margin-left: auto;
+  margin-top: auto;
   display: flex;
   width: 340px;
   height: 48px;
@@ -632,6 +643,34 @@ ul {
 
 .pinterest {
   background-image: url(../assets/svg/icons/pinterest.svg);
+}
+
+.footer__line {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #666666;
+  transform: rotate(-90deg);
+}
+
+.creates__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.creates {
+  margin: 50px 0;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+
+.creator {
+  text-decoration: none;
 }
 
 .navigation {

@@ -32,7 +32,7 @@ p {
 	color: $color-first;
 }
 
-.line__primary {
+.line {
 	content: "";
   display: inline-block;
   background-color: $color-detail;
@@ -40,6 +40,10 @@ p {
   width: 100%;
   height: 3px;
 	margin-top: 25px;
+}
+
+.additional {
+	background-color: $color-gray;
 }
 
 .text__colored {

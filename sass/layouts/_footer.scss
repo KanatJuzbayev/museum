@@ -1,24 +1,30 @@
 .footer {
-  padding: 75px 0;
+  padding: 75px 0 0 0;
   background-color: $color-background;
-
 }
 
 .footer__wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 75px;
+  margin-bottom: 50px;
 }
 
 .footer__links {
-  width: 363px;
+  text-align: inherit;
+  width: 500px;
   height: 128px;
   align-items: flex-start;
 }
 
-.footer__navigation{
-  display: block;
+.navigation__column {
+  display: inline-block;
+}
+
+.first {
+
+}
+
+.second {
+
 }
 
 .footer__navigation_title {
@@ -28,9 +34,13 @@
 .footer__navigation_links {
   padding: 0 0;
   list-style: none;
-  @extend %font-add;
-  @include font($style: normal, $weight: normal, $size: 1.6rem, $height: 3.5rem);
+  li {
+    margin-bottom: 25px;
+  }
   a {
+    @extend %font-pri;
+    @include font($style: normal, $weight: 200, $size: 2.2rem, $height: 2.6rem);
+    letter-spacing: 2px;
     color: $color-first;
     @extend %transition;
     text-decoration: none;
@@ -41,10 +51,14 @@
 }
 
 .footer__logo {
-  margin-right: 152px;
+  margin: 0 145px 0 0;
+  width: 195px;
+  height: 50px;
 }
 
 .social__media {
+  margin-left: auto;
+  margin-top: auto;
   display: flex;
   width: 340px;
   height: 48px;
@@ -89,4 +103,31 @@
 
 .pinterest {
   background-image: url(../assets/svg/icons/pinterest.svg);
+}
+
+.footer__line {
+  content: "";
+  width: 100%;
+  height: 3px;
+
+  background: #666666;
+  transform: rotate(-90deg);
+}
+
+.creates__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.creates {
+  margin: 50px 0;
+  @extend %font-pri;
+  @include font($style: normal, $weight: 200, $size: 2.2rem, $height: 2.2rem);
+  letter-spacing: 2px;
+  color: $color-first;
+}
+
+.creator {
+  text-decoration: none;
 }
