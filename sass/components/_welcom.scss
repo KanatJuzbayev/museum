@@ -33,13 +33,15 @@
 }
 
 .button__discover {
-  @include font ($style: normal, $weight: 200, $size: 2.2rem, $height: 2.6rem);
-  text-align: center;
-  letter-spacing: 2px;
-  color: $color-first;
-  margin-top: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
   width: 360px;
   height: 75px;
+  @include font ($style: normal, $weight: 200, $size: 2.2rem, $height: 2.6rem);
+  letter-spacing: 2px;
+  color: $color-first;
   background-color: $color-detail;
   @extend %transition;
   &:hover {
@@ -47,4 +49,5 @@
   }
   border-radius: 10px;
   border: none;
+  text-decoration: none;
 }
