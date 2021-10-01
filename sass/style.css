@@ -2,12 +2,12 @@
   transition: All 0.3s ease-out;
 }
 
-.buy, .creates, .footer__navigation_links a, body {
-  font-family: "Roboto", Verdana, sans-serif;
+.creates, .footer__navigation_links a, body {
+  font-family: "Roboto", sans-serif;
 }
 
 .place__name, .welcom__title, .section__title {
-  font-family: "Forum", Verdana, sans-serif;
+  font-family: "Forum", cursive;
 }
 
 html {
@@ -626,7 +626,7 @@ ul {
 }
 
 .youtube {
-  background-image: url(../assets/svg/icons/youtube1.svg);
+  background-image: url(../assets/svg/icons/youtube.svg);
 }
 
 .instagram {
@@ -897,7 +897,6 @@ ul {
 
 .bay__title {
   display: inline-block;
-  font-family: sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 2.8rem;
@@ -1024,7 +1023,6 @@ ul {
   align-items: center;
 }
 .total__price {
-  font-family: sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 2.8rem;
@@ -1034,7 +1032,6 @@ ul {
 
 .amount__button {
   border: none;
-  font-family: sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 3.2rem;
@@ -1053,7 +1050,6 @@ ul {
 .number {
   display: block;
   border: none;
-  font-family: sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 2.2rem;
@@ -1234,9 +1230,31 @@ ul {
 
 .contacts__content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-top: 75px;
+  justify-content: space-between;
+}
+
+.contacts__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+  color: #030303;
+}
+
+.contact__info {
+  margin-top: 50px;
+}
+.contact__info p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  margin-bottom: 25px;
+}
+.contact__info p a {
+  text-decoration: none;
+  color: #030303;
 }
 
 /*# sourceMappingURL=style.css.map */

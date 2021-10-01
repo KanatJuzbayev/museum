@@ -4,7 +4,23 @@
 
 .contacts__content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-top: 75px;
+  justify-content: space-between;
+}
+
+.contacts__title {
+  @include font($style: normal, $weight: 500, $size: 2.8rem, $height: 3.3rem);
+  color: $color-background;
+}
+
+.contact__info {
+  margin-top: 50px;
+  p {
+    @include font($style: normal, $weight: 300, $size: 2.2rem, $height: 2.6rem);
+    margin-bottom: 25px;
+    a {
+      text-decoration: none;
+      color: $color-background;
+    }
+  }
 }
