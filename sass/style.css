@@ -1257,4 +1257,9 @@ ul {
   color: #030303;
 }
 
+iframe {
+  width: 960px;
+  height: 620px;
+}
+
 /*# sourceMappingURL=style.css.map */
