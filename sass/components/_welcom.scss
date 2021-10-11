@@ -1,16 +1,26 @@
 .welcom {
   background-color: $color-background;
-  background-image: url(../assets/img/welcom/welcom-background1.png);
-  background-size: 1000px 750px;
-  background-repeat: no-repeat;
-  background-position: calc(50% + 220px) calc(100% - 60px);
+  // background-image: url(../assets/img/welcom/welcom-background1.png);
+  // background-size: 1000px 750px;
+  // background-repeat: no-repeat;
+  // background-position: calc(50% + 220px) calc(100% - 60px);
 }
 
 .welcom__wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: 810px;
+  margin: 0 auto;
   // padding-bottom: 246px;
 }
 
 .welcom__content {
+  position: absolute;
+  z-index: 1;
+  top: 150px;
+  left: 0;
+
   padding-bottom: 246px;
 }
 
@@ -21,7 +31,7 @@
 	letter-spacing: 5px;
 	text-transform: uppercase;
 	color: $color-first;
-	padding-top: 195px;
+	// padding-top: 195px;
 }
 
 .welcom__text {

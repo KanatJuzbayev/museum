@@ -22,4 +22,4 @@ arr.map((item) => {
   gallery.append(picture);
 });
 
-console.log(arr);
+// console.log(arr);
